@@ -11,7 +11,7 @@ import {
 import { GoogleAIFileManager } from "@google/generative-ai/server";
 
 const openai = new OpenAI({
-    apiKey: "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"
+    apiKey: ""
 });
 
 const genAI = new GoogleGenerativeAI("AIzaSyDrNY_hexwjMFYQFcUfdm7D8tq7suET7zM");
