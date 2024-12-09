@@ -1,0 +1,304 @@
+[
+  {
+    "ref": "c92432ec-2138-47c9-bbad-7fe061fd8e2e",
+    "keyword": "e79e1d0fa0bf09f27e710099abbeb37e",
+    "answer": "Buenas tardes",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "1c3d20a0870d0b8077027073fda0ed90"
+  },
+  {
+    "ref": "ans_b28dc6d3-3e6b-4c90-a81a-61115880c3ad",
+    "keyword": "key_3aafd6b9-5ea2-43c2-8680-ecb71c5d2fc4",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "354051881c287e95ef0adafd4022fd54",
+    "from": "18296105615"
+  },
+  {
+    "ref": "58fc3000-126f-4350-b6b3-2c5f348bcf3d",
+    "keyword": null,
+    "answer": "Buenas tardes, Sr. Obispo Montero B. ¿En qué puedo ayudarle hoy? Si está interesado en nuestros servicios, aquí tiene un menú de opciones:\n\nA1. REALIZAR COTIZACIÓN\n\nA2. RASTREAR CARGA\n\nPor favor, escriba la opción que desea, por ejemplo: escriba A1 para cotizar con nosotros.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18296105615",
+    "refSerialize": "3f1cd9204a8e401bde4bcbc6066917b7"
+  },
+  {
+    "ref": "d2abdbc4-d38a-428a-a863-0fe4d2bc68ef",
+    "keyword": "354051881c287e95ef0adafd4022fd54",
+    "answer": "A2",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "1190610edb7effdad40d6d716a3f2b16"
+  },
+  {
+    "ref": "ans_2bbd9ba7-88fc-40a1-b7d9-62b9e4a89d52",
+    "keyword": "key_b250de6a-5068-4d60-8fa7-b5629e4f6a15",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "002b5e51e18704a3e204200dffba4911",
+    "from": "18296105615"
+  },
+  {
+    "ref": "ans_38042a08-195a-4c68-9df3-1c45c6f63b6d",
+    "keyword": "key_0739cce9-32d6-44ec-a0c6-220b3ed2d2f7",
+    "answer": "Por favor, ingresa tu número de rastreo:",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "ef44e27360a293e13a8b742812b89041",
+    "from": "18296105615"
+  },
+  {
+    "ref": "2017c19c-483e-4d4f-b808-a51592fbf537",
+    "keyword": "ef44e27360a293e13a8b742812b89041",
+    "answer": "CHN1621394",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "e79e1d0fa0bf09f27e710099abbeb37e"
+  },
+  {
+    "ref": "95867b90-a674-47ca-8e7a-e27bd6ff3cad",
+    "keyword": null,
+    "answer": "Hubo un error al intentar rastrear tu paquete. Por favor, intenta más tarde.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18296105615",
+    "refSerialize": "c29626798744d3f672e7532ea5866144"
+  },
+  {
+    "ref": "ans_2bbd9ba7-88fc-40a1-b7d9-62b9e4a89d52",
+    "keyword": "key_b250de6a-5068-4d60-8fa7-b5629e4f6a15",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "002b5e51e18704a3e204200dffba4911",
+    "from": "18296105615"
+  },
+  {
+    "ref": "ea2feb6e-df4d-4104-b9e4-7067e38c7bba",
+    "keyword": null,
+    "answer": "Actualmente, no tengo la capacidad de realizar seguimientos de carga. Para asistencia sobre la consulta CHN1621394, por favor contacte al Sr. Obispo Montero al correo electrónico: apayano@ombusinesslogistic.com o vía WhatsApp: +809-902-1521.\n\nMientras tanto, le presento nuestro menú de opciones:\n\nA1. REALIZAR COTIZACIÓN\n\nA2. RASTREAR CARGA\n\nPor favor, escriba la opción que desea, por ejemplo: escriba A1 para cotizar con nosotros. Estamos aquí para ayudarle con sus necesidades logísticas.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18296105615",
+    "refSerialize": "20b6c48d271e9ca01255419312292b06"
+  },
+  {
+    "ref": "ans_2bbd9ba7-88fc-40a1-b7d9-62b9e4a89d52",
+    "keyword": "key_b250de6a-5068-4d60-8fa7-b5629e4f6a15",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "002b5e51e18704a3e204200dffba4911",
+    "from": "17815101547"
+  },
+  {
+    "ref": "ans_38042a08-195a-4c68-9df3-1c45c6f63b6d",
+    "keyword": "key_0739cce9-32d6-44ec-a0c6-220b3ed2d2f7",
+    "answer": "Por favor, ingresa tu número de rastreo:",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "ef44e27360a293e13a8b742812b89041",
+    "from": "17815101547"
+  },
+  {
+    "ref": "7bbb1704-e746-4c15-a098-dde5be9b0503",
+    "keyword": "ef44e27360a293e13a8b742812b89041",
+    "answer": "CHN1621394",
+    "options": {},
+    "from": "17815101547",
+    "refSerialize": "e79e1d0fa0bf09f27e710099abbeb37e"
+  },
+  {
+    "ref": "52713317-0020-4274-910d-444f9990f98e",
+    "keyword": null,
+    "answer": "Hubo un error al intentar rastrear tu paquete. Por favor, intenta más tarde.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "17815101547",
+    "refSerialize": "c29626798744d3f672e7532ea5866144"
+  },
+  {
+    "ref": "ans_2bbd9ba7-88fc-40a1-b7d9-62b9e4a89d52",
+    "keyword": "key_b250de6a-5068-4d60-8fa7-b5629e4f6a15",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "002b5e51e18704a3e204200dffba4911",
+    "from": "17815101547"
+  },
+  {
+    "ref": "5e42608c-5824-47e5-82d0-1cc9543ef203",
+    "keyword": null,
+    "answer": "Actualmente, no puedo acceder a información específica de consultas como CHN1621394. Sin embargo, te invito a que nos contactes directamente para obtener asistencia personalizada y rápida. Puedes comunicarte con nosotros vía WhatsApp al +809-902-1521 o por teléfono al +829-247-0977. Nuestro equipo estará encantado de ayudarte.\n\nA continuación, te presento nuestro menú de opciones para que elijas el tipo de servicio que deseas:\n\nA1. REALIZAR COTIZACIÓN\n\nA2. RASTREAR CARGA\n\nEscribe la opción que desees, por ejemplo, escribe A1 para cotizar con nosotros.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "17815101547",
+    "refSerialize": "041851e1e63547dff4a2fad8427ee6b2"
+  },
+  {
+    "ref": "c11efee8-3959-487b-b216-345c2b0dcebc",
+    "keyword": "002b5e51e18704a3e204200dffba4911",
+    "answer": "A2",
+    "options": {},
+    "from": "17815101547",
+    "refSerialize": "1190610edb7effdad40d6d716a3f2b16"
+  },
+  {
+    "ref": "ans_2bbd9ba7-88fc-40a1-b7d9-62b9e4a89d52",
+    "keyword": "key_b250de6a-5068-4d60-8fa7-b5629e4f6a15",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "002b5e51e18704a3e204200dffba4911",
+    "from": "17815101547"
+  },
+  {
+    "ref": "ans_38042a08-195a-4c68-9df3-1c45c6f63b6d",
+    "keyword": "key_0739cce9-32d6-44ec-a0c6-220b3ed2d2f7",
+    "answer": "Por favor, ingresa tu número de rastreo:",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "ef44e27360a293e13a8b742812b89041",
+    "from": "17815101547"
+  },
+  {
+    "ref": "702d92bd-1b2c-4ea3-b56f-bb052f6e77e4",
+    "keyword": "ef44e27360a293e13a8b742812b89041",
+    "answer": "CHN1621394",
+    "options": {},
+    "from": "17815101547",
+    "refSerialize": "e79e1d0fa0bf09f27e710099abbeb37e"
+  },
+  {
+    "ref": "ans_b28dc6d3-3e6b-4c90-a81a-61115880c3ad",
+    "keyword": "key_3aafd6b9-5ea2-43c2-8680-ecb71c5d2fc4",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "354051881c287e95ef0adafd4022fd54",
+    "from": "120363169975121665@newsletter"
+  },
+  {
+    "ref": "9ad60d09-1a6c-42ff-90e6-87ffd2748337",
+    "keyword": null,
+    "answer": "Este es el estado de su carga",
+    "options": {
+      "media": "https://storage.googleapis.com/triptap-dev.appspot.com/569a45c9-5e54-4a6a-995f-88ada7923bb1.png",
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "17815101547",
+    "refSerialize": "1c9ba19b168aabf7a63676db39e022e4"
+  },
+  {
+    "ref": "c59533b0-7a00-40bf-81d6-3f85ef97cd68",
+    "keyword": null,
+    "answer": "GRACIAS POR PREFERIRNOS",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "17815101547",
+    "refSerialize": "a6d021369fb2ff1fdb488682a661b455"
+  },
+  {
+    "ref": "0f266a49-e170-401c-8231-256ee440be72",
+    "keyword": "ans_38042a08-195a-4c68-9df3-1c45c6f63b6d",
+    "answer": "__end_flow__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "17815101547",
+    "refSerialize": "a07e48655d1eb1adf63c1b74c6ee668e"
+  }
+]
