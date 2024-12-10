@@ -16,6 +16,7 @@ const openai = new OpenAI({
 
 const genAI = new GoogleGenerativeAI("AIzaSyDrNY_hexwjMFYQFcUfdm7D8tq7suET7zM");
 const fileManager = new GoogleAIFileManager("AIzaSyDrNY_hexwjMFYQFcUfdm7D8tq7suET7zM");
+var lang = "ES";
 
 async function uploadToGemini(buffer, mimeType, fileName) {
     const uploadResult = await fileManager.uploadFile(buffer, {
@@ -60,7 +61,10 @@ const getQA = async (text: string, name: string) => {
         model: "gpt-4o",
         messages: [
             {
-                role: "system", content: `TE DARE LA DESCRIPCION DE LA EMPRESA OM BUSINESS LOGISTIC, ESTARA EN INGLES, PERO DEBES RESPONDER EN EL IDIOMA QUE EL USUARIO ESCRIBA:
+                role: "system", content: `
+                EL IDIOMA DEL USUARIO ES: ${lang}
+                
+                TE DARE LA DESCRIPCION DE LA EMPRESA OM BUSINESS LOGISTIC, ESTARA EN INGLES, PERO DEBES RESPONDER EN EL IDIOMA QUE EL USUARIO ESCRIBA:
             
                 --------------------
 
@@ -282,8 +286,16 @@ Universal Venture.
 
 Menu de opciones, le presentaras al usuario el siguente menu:
 
+MENU EN ESPAÑOL
+--------------------
 A1. REALIZAR COTIZACIÓN
 A2. RASTREAR CARGA
+
+MENU EN INGLES
+----------------------
+A1. MAKE A QUOTE
+A2. TRACK CARGO
+
 
 DEBES INDICARLE QUE DEBE ESCRIBIR LA OPCIÓN QUE DESEA, EJEMPLO: ESCRIBA A1 PARA COTIZAR CON NOSOTROS.
 
@@ -292,6 +304,18 @@ EL MENU DEBES PONERLO ORDENADO Y QUE QUEDEN LAS OPCIONES UNA DEBAJO DE LA OTRA C
 RESPONDE TODO EN EL IDIOMA QUE EL USUARIO ESCRIBIO, INCLUYENDO LA DESCRIPCION DEL MENU.
                 ` },
             { role: "user", content: `Nombre: ${name}, Consulta: ${text}` }
+        ]
+    });
+    return completion.choices[0].message?.content || "Lo siento, no tengo información al respecto.";
+};
+
+const getLang = async (text: string) => {
+    const completion = await openai.chat.completions.create({
+        model: "gpt-4o",
+        messages: [
+            {
+                role: "system", content: `QUIERO QUE CON EL MENSAJE DEL CLIENTE DETERMINES SI ES INGLES O ESPAÑOL EL IDIOMA, SI ES INGLES QUIERO QUE SOLO ME RETORNES: EN Y SI ES ESPAÑOL QUIERO QUE SOLO ME RETORNES ES, NO QUIERO QUE ME RETORNES MAS NADA, SOLO ESO.` },
+            { role: "user", content: `Consulta: ${text}` }
         ]
     });
     return completion.choices[0].message?.content || "Lo siento, no tengo información al respecto.";
@@ -309,12 +333,13 @@ const storeConversation = (number: string, message: string) => {
 const OMFlow = addKeyword<Provider, Database>(['hola', 'buenas', 'tardes', 'saludos', 'hey', 'que tal', 'como esta', 'ola', 'buena', 'saludo', 'klk', 'como estas', "hello", "good", "afternoon", "greetings", "hey", "what's up", "how are you", "hi", "good", "greeting", "what's up", "how are you"]).addAction(async (ctx, { flowDynamic, provider }) => {
     storeConversation(ctx.from, ctx.body);
     await typing(ctx, provider);
+    lang = await getLang(ctx.body);
     const res = await getQA(ctx.body, ctx.name);
     await flowDynamic(res);
 });
 
 const cotizacionFlow = addKeyword<Provider, Database>('REALIZAR COTIZACIÓN')
-    .addAnswer('Por favor, selecciona el tipo de carga ingresando el número:\n1. OCEAN FCL', { capture: true }, async (ctx, { flowDynamic, gotoFlow }) => {
+    .addAnswer(lang == 'ES' ? 'Por favor, selecciona el tipo de carga ingresando el número:\n1. OCEAN FCL' : 'Please select the type of cargo by entering the number:\n1. OCEAN FCL', { capture: true }, async (ctx, { flowDynamic, gotoFlow }) => {
         const tipoCarga = ctx.body; // Cambiamos a tipoCarga
         const sessionData = { tipoCarga };
 
@@ -326,7 +351,7 @@ const cotizacionFlow = addKeyword<Provider, Database>('REALIZAR COTIZACIÓN')
     });
 
 const puertoOrigenFlow = addKeyword<Provider, Database>('PUERTO ORIGEN')
-    .addAnswer('Por favor, ingresa el código del puerto de origen (ej: USMIA):', { capture: true }, async (ctx, { flowDynamic, gotoFlow }) => {
+    .addAnswer(lang == 'ES' ? 'Por favor, ingresa el código del puerto de origen (ej: USMIA):' : 'Please enter the code of the port of origin (ex: USMIA):', { capture: true }, async (ctx, { flowDynamic, gotoFlow }) => {
         const sessionData = conversationHistory.get(ctx.from);
         sessionData.origen = ctx.body;
 
@@ -335,7 +360,7 @@ const puertoOrigenFlow = addKeyword<Provider, Database>('PUERTO ORIGEN')
     });
 
 const puertoDestinoFlow = addKeyword<Provider, Database>('PUERTO DESTINO')
-    .addAnswer('Por favor, ingresa el código del puerto de destino (ej: DOHAI):', { capture: true }, async (ctx, { flowDynamic, gotoFlow }) => {
+    .addAnswer(lang == 'ES' ? 'Por favor, ingresa el código del puerto de destino (ej: DOHAI):' : 'Please enter the destination port code (ex: DOHAI):', { capture: true }, async (ctx, { flowDynamic, gotoFlow }) => {
         const sessionData = conversationHistory.get(ctx.from);
         sessionData.destino = ctx.body;
 
@@ -345,7 +370,7 @@ const puertoDestinoFlow = addKeyword<Provider, Database>('PUERTO DESTINO')
 
 const detallesCargaFlow = addKeyword<Provider, Database>('DETALLES CARGA')
     .addAnswer(
-        'Por favor, ingresa los detalles de la carga:\n\nIngresa la cantidad de contenedores y el tipo (20 ft, 40 ft, 40 HC), siguiendo el siguiente formato: 20 ft,1 (la cantidad de contenedores luego de la coma):',
+        lang == 'ES' ? 'Por favor, ingresa los detalles de la carga:\n\nIngresa la cantidad de contenedores y el tipo (20 ft, 40 ft, 40 HC), siguiendo el siguiente formato: 20 ft,1 (la cantidad de contenedores luego de la coma):' : 'Please enter the details of the cargo:\n\nEnter the number of containers and the type (20 ft, 40 ft, 40 HC), following the following format: 20 ft,1 (the number of containers after the coma):',
         { capture: true },
         async (ctx, { gotoFlow, flowDynamic }) => {
             const sessionData = conversationHistory.get(ctx.from);
@@ -356,7 +381,7 @@ const detallesCargaFlow = addKeyword<Provider, Database>('DETALLES CARGA')
 
             if (!regex.test(ctx.body.trim())) {
                 // Si el formato es incorrecto, enviar un mensaje y reiniciar el flujo
-                await flowDynamic('⚠️ Formato incorrecto. Por favor, ingresa la información correctamente siguiendo el formato: 20 ft,1 o 40 ft,1.');
+                await flowDynamic(lang == 'ES' ? '⚠️ Formato incorrecto. Por favor, ingresa la información correctamente siguiendo el formato: 20 ft,1 o 40 ft,1.' : '⚠️ Incorrect format. Please enter the information correctly following the format: 20 ft.1 or 40 ft.1.');
                 return gotoFlow(detallesCargaFlow);
             }
 
@@ -374,12 +399,12 @@ const detallesCargaFlow = addKeyword<Provider, Database>('DETALLES CARGA')
     );
 
 const rastrearCargaFlow = addKeyword<Provider, Database>('RASTREAR CARGA')
-    .addAnswer('Por favor, ingresa tu número de rastreo:', { capture: true }, async (ctx, { flowDynamic, endFlow, provider }) => {
+    .addAnswer(lang == 'ES' ? 'Por favor, ingresa tu número de rastreo:' : 'Please enter your tracking number:', { capture: true }, async (ctx, { flowDynamic, endFlow, provider }) => {
         const numeroRastreo = ctx.body.trim();
         await typing(ctx, provider);
 
         if (!numeroRastreo) {
-            return flowDynamic('El número de rastreo no puede estar vacío. Por favor, intenta nuevamente.');
+            return flowDynamic(lang == 'ES' ? 'El número de rastreo no puede estar vacío. Por favor, intenta nuevamente.' : 'The tracking number cannot be empty. Please try again.');
         }
 
         try {
@@ -388,9 +413,9 @@ const rastrearCargaFlow = addKeyword<Provider, Database>('RASTREAR CARGA')
             console.log(response)
 
             await flowDynamic([
-                { body: 'Este es el estado de su carga', media: response.data.url }
+                { body: lang == 'ES' ? 'Este es el estado de su carga' : 'This is the status of your charge', media: response.data.url }
             ]);
-            return endFlow('GRACIAS POR PREFERIRNOS');
+            return endFlow(lang == 'ES' ? 'GRACIAS POR PREFERIRNOS' : 'THANK YOU FOR PREFERRING US');
         } catch (error) {
             console.error('Error al rastrear el paquete:', error);
             return flowDynamic('Hubo un error al intentar rastrear tu paquete. Por favor, intenta más tarde.');
@@ -417,13 +442,13 @@ const cotizacionFinal = addKeyword<Provider, Database>('COTIZACION')
                     {
                         role: "user",
                         parts: [
-                            { text: `Retorname en un texto describiendo las fechas disponibles con los precios mas altos y los precios mas bajos, listalos para el usuario, no pongas ningun mensaje para mi, es directamente para el usuario, debes presentarle el precio mas alto y el precio mas bajo que se muestra en el HTML y debes convencerlo de adquirir los servcios de OM Business Logistic. Ete es el HTML: ${rates}. Debes traer todos los precios y organizarlos desde el mas bajo hasta el mas bajo, pero solo presentame las fechas en las cuales hay precios disponibles. Lista los precios y el mensaje debe iniciar diciendo: Este es el listado de precios disponibles. Quiero que  presentes todos los precios, no dejes fuera ningun precio. A todos los precios quero que le sumes un 20% en base al valor original. No le indiques al usuario que se le esta agregando un 20%, solo dale el precio final sumandole el 20% y no le muestres el precio original.` },
+                            { text: `Retorname en un texto describiendo las fechas disponibles con los precios mas altos y los precios mas bajos, listalos para el usuario, no pongas ningun mensaje para mi, es directamente para el usuario, debes presentarle el precio mas alto y el precio mas bajo que se muestra en el HTML y debes convencerlo de adquirir los servcios de OM Business Logistic. Ete es el HTML: ${rates}. Debes traer todos los precios y organizarlos desde el mas bajo hasta el mas bajo, pero solo presentame las fechas en las cuales hay precios disponibles. Lista los precios y el mensaje debe iniciar diciendo: Este es el listado de precios disponibles. Quiero que  presentes todos los precios, no dejes fuera ningun precio. A todos los precios quero que le sumes un 20% en base al valor original. No le indiques al usuario que se le esta agregando un 20%, solo dale el precio final sumandole el 20% y no le muestres el precio original. EL IDIOMA DEL USUARIO ES: ${lang}` },
                         ],
                     }
                 ],
             });
 
-            const result = await chatSession.sendMessage(`Retorname en un texto describiendo las fechas disponibles con los precios mas altos y los precios mas bajos, listalos para el usuario, no pongas ningun mensaje para mi, es directamente para el usuario, debes presentarle el precio mas alto y el precio mas bajo que se muestra en el HTML y debes convencerlo de adquirir los servcios de OM Business Logistic. Ete es el HTML: ${rates}. Debes traer todos los precios y organizarlos desde el mas bajo hasta el mas bajo, pero solo presentame las fechas en las cuales hay precios disponibles. Lista los precios y el mensaje debe iniciar diciendo: Este es el listado de precios disponibles. Quiero que  presentes todos los precios, no dejes fuera ningun precio.`);
+            const result = await chatSession.sendMessage(`Retorname en un texto describiendo las fechas disponibles con los precios mas altos y los precios mas bajos, listalos para el usuario, no pongas ningun mensaje para mi, es directamente para el usuario, debes presentarle el precio mas alto y el precio mas bajo que se muestra en el HTML y debes convencerlo de adquirir los servcios de OM Business Logistic. Ete es el HTML: ${rates}. Debes traer todos los precios y organizarlos desde el mas bajo hasta el mas bajo, pero solo presentame las fechas en las cuales hay precios disponibles. Lista los precios y el mensaje debe iniciar diciendo: Este es el listado de precios disponibles. Quiero que  presentes todos los precios, no dejes fuera ningun precio. EL IDIOMA DEL USUARIO ES: ${lang}`);
 
             await flowDynamic(result.response.text());
         } catch (error) {
