@@ -1,15 +1,15 @@
 [
   {
-    "ref": "c92432ec-2138-47c9-bbad-7fe061fd8e2e",
-    "keyword": "e79e1d0fa0bf09f27e710099abbeb37e",
-    "answer": "Buenas tardes",
+    "ref": "8d5ce5c4-6a0c-4b63-91d3-7073b75f951c",
+    "keyword": "1c4faf7368997e9d52349edb0ae983e4",
+    "answer": "A1",
     "options": {},
-    "from": "18296105615",
-    "refSerialize": "1c3d20a0870d0b8077027073fda0ed90"
+    "from": "18098128353",
+    "refSerialize": "c58c7648e3f2e0499973ca3635b26645"
   },
   {
-    "ref": "ans_b28dc6d3-3e6b-4c90-a81a-61115880c3ad",
-    "keyword": "key_3aafd6b9-5ea2-43c2-8680-ecb71c5d2fc4",
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
     "answer": "__call_action__",
     "options": {
       "buttons": [],
@@ -19,13 +19,291 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "354051881c287e95ef0adafd4022fd54",
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18098128353"
+  },
+  {
+    "ref": "ans_7ae4d3b7-80f8-40a5-adb8-6c9644083bf2",
+    "keyword": "key_3cd6eadd-0dc6-46dd-9eaf-19dce391e152",
+    "answer": "Por favor, selecciona el tipo de carga ingresando el número:\n1. OCEAN FCL",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "196204bf4ce6fd357f5c7935b7cd06a9",
+    "from": "18098128353"
+  },
+  {
+    "ref": "3f55fd51-d8f4-4704-9d23-c44706729770",
+    "keyword": "196204bf4ce6fd357f5c7935b7cd06a9",
+    "answer": "1",
+    "options": {},
+    "from": "18098128353",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_26a1db58-7a64-44e5-add0-327dda0b215d",
+    "keyword": "key_9c569882-ce5a-4f10-a246-ba2f6ee106e0",
+    "answer": "Por favor, ingresa el código del puerto de origen (ej: USMIA):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "44901f879093143449ad3a89f41960cd",
+    "from": "18098128353"
+  },
+  {
+    "ref": "aea112c6-0479-4120-afb2-66d3d5949a10",
+    "keyword": "44901f879093143449ad3a89f41960cd",
+    "answer": "USMIA",
+    "options": {},
+    "from": "18098128353",
+    "refSerialize": "ac6b1ce2ecf8bb0fd6d77f09051cf584"
+  },
+  {
+    "ref": "ans_3d3966c1-5db4-4976-861a-9e0185f146d6",
+    "keyword": "key_4812da22-761f-4c57-b2fc-cfbbc190c647",
+    "answer": "Por favor, ingresa el código del puerto de destino (ej: DOHAI):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "722d6fdbcd28897f25ca0899fb303c62",
+    "from": "18098128353"
+  },
+  {
+    "ref": "b2038507-717b-46b5-b3fd-2393c2bf29dd",
+    "keyword": "722d6fdbcd28897f25ca0899fb303c62",
+    "answer": "DOCAU",
+    "options": {},
+    "from": "18098128353",
+    "refSerialize": "2e8a6429642459927c58d4ec5fbce02b"
+  },
+  {
+    "ref": "ans_b5bc2bb9-f6db-496b-876d-aeabd4efcba6",
+    "keyword": "key_ed311335-ff64-47de-99a7-d8229b45f39e",
+    "answer": "Por favor, ingresa los detalles de la carga:\n\nIngresa la cantidad de contenedores y el tipo (20 ft, 40 ft, 40 HC), siguiendo el siguiente formato: 20 ft,1 (la cantidad de contenedores luego de la coma):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "736dd444e4fec45ca150f4bfd7a71595",
+    "from": "18098128353"
+  },
+  {
+    "ref": "65695ea6-4d6e-41ab-8076-d20536c368ca",
+    "keyword": "736dd444e4fec45ca150f4bfd7a71595",
+    "answer": "20 ft,1",
+    "options": {},
+    "from": "18098128353",
+    "refSerialize": "48523835ce388c700787944ce0216f56"
+  },
+  {
+    "ref": "ans_a8769553-9ba0-4c00-bc05-df36c27c0628",
+    "keyword": "key_45c0ef03-be0f-41d1-b001-9c328d451337",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "adfbc5e7c0c2e502f55c7076bab40400",
+    "from": "18098128353"
+  },
+  {
+    "ref": "10d1319e-06ba-4f99-bade-7dd7c46cd306",
+    "keyword": null,
+    "answer": "Este es el listado de precios disponibles:\n\n* **2025-01-23:** USD 910.80 (Quick Quotes Spot)\n* **2025-01-16:** USD 915.60 (Quick Quotes Spot)\n* **2025-01-09:** USD 922.80 (Quick Quotes Spot)\n* **2025-01-02:** USD 933.60 (Quick Quotes Spot)\n* **2024-12-27:** USD 948 (Quick Quotes Spot)\n* **2024-12-19:** USD 974.40 (Quick Quotes Spot)\n* **2025-01-23:** USD 1023.60 (Quick Quotes)\n* **2025-01-16:** USD 1023.60 (Quick Quotes)\n* **2025-01-09:** USD 1023.60 (Quick Quotes)\n* **2025-01-02:** USD 1023.60 (Quick Quotes)\n* **2024-12-27:** USD 1023.60 (Quick Quotes)\n* **2024-12-19:** USD 1023.60 (Quick Quotes)\n\n\nEn OM Business Logistic, nos enfocamos en brindar soluciones logísticas eficientes y rentables.  Nuestros precios competitivos, aun con el margen adicional, reflejan nuestro compromiso con la excelencia y la satisfacción del cliente. ¡Contáctanos hoy mismo para obtener la mejor opción para tus necesidades de logística!\n",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18098128353",
+    "refSerialize": "a767491880b0b7101b1d93889e8bfc4a"
+  },
+  {
+    "ref": "3b262921-93bf-4820-906c-4a9579a4c5dd",
+    "keyword": "adfbc5e7c0c2e502f55c7076bab40400",
+    "answer": "A1",
+    "options": {},
+    "from": "18098128353",
+    "refSerialize": "c58c7648e3f2e0499973ca3635b26645"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18098128353"
+  },
+  {
+    "ref": "ans_7ae4d3b7-80f8-40a5-adb8-6c9644083bf2",
+    "keyword": "key_3cd6eadd-0dc6-46dd-9eaf-19dce391e152",
+    "answer": "Por favor, selecciona el tipo de carga ingresando el número:\n1. OCEAN FCL",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "196204bf4ce6fd357f5c7935b7cd06a9",
+    "from": "18098128353"
+  },
+  {
+    "ref": "1ab18290-9d72-43c7-b076-4ba27b1569ce",
+    "keyword": "196204bf4ce6fd357f5c7935b7cd06a9",
+    "answer": "1",
+    "options": {},
+    "from": "18098128353",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_26a1db58-7a64-44e5-add0-327dda0b215d",
+    "keyword": "key_9c569882-ce5a-4f10-a246-ba2f6ee106e0",
+    "answer": "Por favor, ingresa el código del puerto de origen (ej: USMIA):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "44901f879093143449ad3a89f41960cd",
+    "from": "18098128353"
+  },
+  {
+    "ref": "51f8c9fb-ffb8-4324-b1a4-8eb308b9a4a3",
+    "keyword": "44901f879093143449ad3a89f41960cd",
+    "answer": "USMIA",
+    "options": {},
+    "from": "18098128353",
+    "refSerialize": "ac6b1ce2ecf8bb0fd6d77f09051cf584"
+  },
+  {
+    "ref": "ans_3d3966c1-5db4-4976-861a-9e0185f146d6",
+    "keyword": "key_4812da22-761f-4c57-b2fc-cfbbc190c647",
+    "answer": "Por favor, ingresa el código del puerto de destino (ej: DOHAI):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "722d6fdbcd28897f25ca0899fb303c62",
+    "from": "18098128353"
+  },
+  {
+    "ref": "a4ad7eee-3984-4e2c-acc5-35b3ad9415f6",
+    "keyword": "722d6fdbcd28897f25ca0899fb303c62",
+    "answer": "DOCAU",
+    "options": {},
+    "from": "18098128353",
+    "refSerialize": "2e8a6429642459927c58d4ec5fbce02b"
+  },
+  {
+    "ref": "ans_b5bc2bb9-f6db-496b-876d-aeabd4efcba6",
+    "keyword": "key_ed311335-ff64-47de-99a7-d8229b45f39e",
+    "answer": "Por favor, ingresa los detalles de la carga:\n\nIngresa la cantidad de contenedores y el tipo (20 ft, 40 ft, 40 HC), siguiendo el siguiente formato: 20 ft,1 (la cantidad de contenedores luego de la coma):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "736dd444e4fec45ca150f4bfd7a71595",
+    "from": "18098128353"
+  },
+  {
+    "ref": "ee172ea0-df9f-4274-9cf4-1d05c2f10de4",
+    "keyword": "736dd444e4fec45ca150f4bfd7a71595",
+    "answer": "20 ft,1",
+    "options": {},
+    "from": "18098128353",
+    "refSerialize": "48523835ce388c700787944ce0216f56"
+  },
+  {
+    "ref": "ans_a8769553-9ba0-4c00-bc05-df36c27c0628",
+    "keyword": "key_45c0ef03-be0f-41d1-b001-9c328d451337",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "adfbc5e7c0c2e502f55c7076bab40400",
+    "from": "18098128353"
+  },
+  {
+    "ref": "5df2c3b4-b40d-4ee0-9b3c-80d9eb16e165",
+    "keyword": null,
+    "answer": "Este es el listado de precios disponibles:\n\n* **2025-01-23:** USD 910.80 (Quick Quotes Spot)\n* **2025-01-16:** USD 915.60 (Quick Quotes Spot)\n* **2025-01-09:** USD 922.80 (Quick Quotes Spot)\n* **2025-01-02:** USD 933.60 (Quick Quotes Spot)\n* **2024-12-27:** USD 948 (Quick Quotes Spot)\n* **2024-12-19:** USD 974.40 (Quick Quotes Spot)\n* **2025-01-23:** USD 1023.60 (Quick Quotes)\n* **2025-01-16:** USD 1023.60 (Quick Quotes)\n* **2025-01-09:** USD 1023.60 (Quick Quotes)\n* **2025-01-02:** USD 1023.60 (Quick Quotes)\n* **2024-12-27:** USD 1023.60 (Quick Quotes)\n* **2024-12-19:** USD 1023.60 (Quick Quotes)\n\n\nEn OM Business Logistic nos dedicamos a ofrecerle las mejores opciones de logística para sus envíos.  Nuestros precios competitivos y nuestro compromiso con la eficiencia y la satisfacción del cliente nos convierten en su mejor aliado para el transporte de sus mercancías.  No espere más, contáctenos y reserve su envío con la fecha y precio que más le convenga.\n",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18098128353",
+    "refSerialize": "059aaf2da28c66e58b8cc72bb8c8f3df"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
     "from": "18296105615"
   },
   {
-    "ref": "58fc3000-126f-4350-b6b3-2c5f348bcf3d",
+    "ref": "456593cc-82be-4b86-9b85-e6186f80f459",
     "keyword": null,
-    "answer": "Buenas tardes, Sr. Obispo Montero B. ¿En qué puedo ayudarle hoy? Si está interesado en nuestros servicios, aquí tiene un menú de opciones:\n\nA1. REALIZAR COTIZACIÓN\n\nA2. RASTREAR CARGA\n\nPor favor, escriba la opción que desea, por ejemplo: escriba A1 para cotizar con nosotros.",
+    "answer": "¡Buenos días, Obispo Montero! Gracias por contactarnos. En OM BUSINESS LOGISTIC estamos aquí para ayudarte con todas tus necesidades de logística y transporte. Por favor, házmelo saber si hay algo específico en lo que pueda asistirte hoy.\n\nSi estás interesado en alguno de nuestros servicios, aquí te presento un menú de opciones:\n\nA1. REALIZAR COTIZACIÓN\n\nA2. RASTREAR CARGA\n\nEscribe A1 para cotizar con nosotros o A2 si deseas rastrear tu carga. Espero poder ayudarte pronto.",
     "options": {
       "media": null,
       "buttons": [],
@@ -33,19 +311,756 @@
       "delay": 0
     },
     "from": "18296105615",
-    "refSerialize": "3f1cd9204a8e401bde4bcbc6066917b7"
+    "refSerialize": "735219033de45e8f3782bc0f6f769bff"
   },
   {
-    "ref": "d2abdbc4-d38a-428a-a863-0fe4d2bc68ef",
-    "keyword": "354051881c287e95ef0adafd4022fd54",
+    "ref": "f0ec7a38-bc96-4f02-8262-3dc590296d7c",
+    "keyword": "9731f459bb99c5814417449663ba5177",
+    "answer": "A1",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "c58c7648e3f2e0499973ca3635b26645"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18296105615"
+  },
+  {
+    "ref": "ans_7ae4d3b7-80f8-40a5-adb8-6c9644083bf2",
+    "keyword": "key_3cd6eadd-0dc6-46dd-9eaf-19dce391e152",
+    "answer": "Por favor, selecciona el tipo de carga ingresando el número:\n1. OCEAN FCL",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "196204bf4ce6fd357f5c7935b7cd06a9",
+    "from": "18296105615"
+  },
+  {
+    "ref": "bc383f0a-31e5-478c-89e1-d701726b5f75",
+    "keyword": "196204bf4ce6fd357f5c7935b7cd06a9",
+    "answer": "1",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_26a1db58-7a64-44e5-add0-327dda0b215d",
+    "keyword": "key_9c569882-ce5a-4f10-a246-ba2f6ee106e0",
+    "answer": "Por favor, ingresa el código del puerto de origen (ej: USMIA):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "44901f879093143449ad3a89f41960cd",
+    "from": "18296105615"
+  },
+  {
+    "ref": "d39d6606-55d2-4b15-8168-f5f7d45ec0e0",
+    "keyword": "44901f879093143449ad3a89f41960cd",
+    "answer": "DOCAU",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "2e8a6429642459927c58d4ec5fbce02b"
+  },
+  {
+    "ref": "ans_3d3966c1-5db4-4976-861a-9e0185f146d6",
+    "keyword": "key_4812da22-761f-4c57-b2fc-cfbbc190c647",
+    "answer": "Por favor, ingresa el código del puerto de destino (ej: DOHAI):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "722d6fdbcd28897f25ca0899fb303c62",
+    "from": "18296105615"
+  },
+  {
+    "ref": "761a0842-192f-4666-a888-d9d52968d3d8",
+    "keyword": "722d6fdbcd28897f25ca0899fb303c62",
+    "answer": "USMIA",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "ac6b1ce2ecf8bb0fd6d77f09051cf584"
+  },
+  {
+    "ref": "ans_b5bc2bb9-f6db-496b-876d-aeabd4efcba6",
+    "keyword": "key_ed311335-ff64-47de-99a7-d8229b45f39e",
+    "answer": "Por favor, ingresa los detalles de la carga:\n\nIngresa la cantidad de contenedores y el tipo (20 ft, 40 ft, 40 HC), siguiendo el siguiente formato: 20 ft,1 (la cantidad de contenedores luego de la coma):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "736dd444e4fec45ca150f4bfd7a71595",
+    "from": "18296105615"
+  },
+  {
+    "ref": "b22da1ab-6157-4019-b4b1-8a29f20643f8",
+    "keyword": "736dd444e4fec45ca150f4bfd7a71595",
+    "answer": "20 ft,2",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "aed45ce054cdc99e872a6397dda8908d"
+  },
+  {
+    "ref": "ans_a8769553-9ba0-4c00-bc05-df36c27c0628",
+    "keyword": "key_45c0ef03-be0f-41d1-b001-9c328d451337",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "adfbc5e7c0c2e502f55c7076bab40400",
+    "from": "18296105615"
+  },
+  {
+    "ref": "619fc26c-e5a5-4e5d-9e22-a13cf4f38a37",
+    "keyword": null,
+    "answer": "Este es el listado de precios disponibles:\n\n* 2024-12-27: USD 1377.60\n* 2025-01-03: USD 1377.60\n* 2025-01-09: USD 1377.60\n* 2025-01-17: USD 1377.60\n* 2025-01-23: USD 1377.60\n\n\nEl precio más bajo es de USD 1377.60 y el precio más alto también es de USD 1377.60.  ¡Aproveche nuestras tarifas competitivas y la confiabilidad de OM Business Logistic para sus necesidades de logística!  Con OM Business Logistic, su mercancía estará en buenas manos, garantizando una entrega eficiente y segura. ¡Contáctenos hoy mismo para obtener más información!\n",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18296105615",
+    "refSerialize": "47f7c87d3bb69895c4fa3fa3f694bda8"
+  },
+  {
+    "ref": "b96685fe-4453-4df0-bfcf-ebd4d333d496",
+    "keyword": "adfbc5e7c0c2e502f55c7076bab40400",
+    "answer": "Muchas gracias",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "2d9310be9082475030a4b3fd6bdbeb40"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18296105615"
+  },
+  {
+    "ref": "13ed679a-b2ba-4668-96fa-22dd2d1c97b7",
+    "keyword": null,
+    "answer": "¡De nada, Obispo Montero B.! Si tienes alguna otra pregunta o necesitas más información, no dudes en contactarnos. También te invito a explorar nuestras opciones:\n\nA1. REALIZAR COTIZACIÓN\n\nA2. RASTREAR CARGA\n\nEscribe la opción que deseas, por ejemplo: ESCRIBA A1 PARA COTIZAR CON NOSOTROS.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18296105615",
+    "refSerialize": "d10a84b9280a50451b3601131e161544"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18294719174"
+  },
+  {
+    "ref": "46ff456f-3aa8-47db-89e0-7adfe140075d",
+    "keyword": null,
+    "answer": "Hola Nathanael de Jesus,\n\nGracias por contactarnos. Entiendo que estás interesado en una de nuestras opciones de servicio. A continuación te presento el menú de opciones que tenemos disponibles:\n\nA1. REALIZAR COTIZACIÓN\n\nA2. RASTREAR CARGA\n\nPor favor, escribe A1 para cotizar con nosotros o A2 para rastrear carga. Estamos aquí para ayudarte con cualquier solicitud que tengas.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18294719174",
+    "refSerialize": "49a67813012ba5292e28e2699fea5836"
+  },
+  {
+    "ref": "46f97ffc-1754-444c-a356-0ea7e50a3761",
+    "keyword": "9731f459bb99c5814417449663ba5177",
+    "answer": "A1",
+    "options": {},
+    "from": "18294719174",
+    "refSerialize": "c58c7648e3f2e0499973ca3635b26645"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18294719174"
+  },
+  {
+    "ref": "ans_7ae4d3b7-80f8-40a5-adb8-6c9644083bf2",
+    "keyword": "key_3cd6eadd-0dc6-46dd-9eaf-19dce391e152",
+    "answer": "Por favor, selecciona el tipo de carga ingresando el número:\n1. OCEAN FCL",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "196204bf4ce6fd357f5c7935b7cd06a9",
+    "from": "18294719174"
+  },
+  {
+    "ref": "23b46e12-a9bd-4478-9846-644b984e948b",
+    "keyword": "196204bf4ce6fd357f5c7935b7cd06a9",
+    "answer": "1",
+    "options": {},
+    "from": "18294719174",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_26a1db58-7a64-44e5-add0-327dda0b215d",
+    "keyword": "key_9c569882-ce5a-4f10-a246-ba2f6ee106e0",
+    "answer": "Por favor, ingresa el código del puerto de origen (ej: USMIA):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "44901f879093143449ad3a89f41960cd",
+    "from": "18294719174"
+  },
+  {
+    "ref": "3a41b0ed-03fb-4b60-8cda-4601a0010e69",
+    "keyword": "44901f879093143449ad3a89f41960cd",
+    "answer": "COCTG",
+    "options": {},
+    "from": "18294719174",
+    "refSerialize": "780b7c4e95574958be98d6e0102b1fdc"
+  },
+  {
+    "ref": "ans_3d3966c1-5db4-4976-861a-9e0185f146d6",
+    "keyword": "key_4812da22-761f-4c57-b2fc-cfbbc190c647",
+    "answer": "Por favor, ingresa el código del puerto de destino (ej: DOHAI):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "722d6fdbcd28897f25ca0899fb303c62",
+    "from": "18294719174"
+  },
+  {
+    "ref": "d73b1dc6-4fa0-432f-a6b2-488bacd6785e",
+    "keyword": "722d6fdbcd28897f25ca0899fb303c62",
+    "answer": "DOCAU",
+    "options": {},
+    "from": "18294719174",
+    "refSerialize": "2e8a6429642459927c58d4ec5fbce02b"
+  },
+  {
+    "ref": "ans_b5bc2bb9-f6db-496b-876d-aeabd4efcba6",
+    "keyword": "key_ed311335-ff64-47de-99a7-d8229b45f39e",
+    "answer": "Por favor, ingresa los detalles de la carga:\n\nIngresa la cantidad de contenedores y el tipo (20 ft, 40 ft, 40 HC), siguiendo el siguiente formato: 20 ft,1 (la cantidad de contenedores luego de la coma):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "736dd444e4fec45ca150f4bfd7a71595",
+    "from": "18294719174"
+  },
+  {
+    "ref": "574601a0-106f-47f5-97c7-a862506b47dd",
+    "keyword": "736dd444e4fec45ca150f4bfd7a71595",
+    "answer": "40 ft,2",
+    "options": {},
+    "from": "18294719174",
+    "refSerialize": "55ba096b303e653422ec882e26d111c9"
+  },
+  {
+    "ref": "ans_a8769553-9ba0-4c00-bc05-df36c27c0628",
+    "keyword": "key_45c0ef03-be0f-41d1-b001-9c328d451337",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "adfbc5e7c0c2e502f55c7076bab40400",
+    "from": "18294719174"
+  },
+  {
+    "ref": "ans_561828a2-21cc-449c-b102-8d3ffc20fbce",
+    "keyword": "key_bcd892da-fcdd-4a7e-941d-103c8c0f40a8",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "dfbb1574edb7c57b8b1456e5792fec06",
+    "from": "18099668188"
+  },
+  {
+    "ref": "671fcb2d-bb5a-406f-8472-a09eb589416b",
+    "keyword": null,
+    "answer": "Hola, Antony Payano. Buenas tardes. ¿En qué puedo ayudarte hoy? Si tienes alguna consulta sobre nuestros servicios de logística o necesitas asistencia, por favor házmelo saber. Aquí tienes un menú de opciones que podría interesarte:\n\nA1. REALIZAR COTIZACIÓN\n\nA2. RASTREAR CARGA\n\nPor favor, escribe la opción que deseas, por ejemplo: ESCRIBA A1 PARA COTIZAR CON NOSOTROS.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18099668188",
+    "refSerialize": "42e91a956a3f896e0009dbef6ca98a73"
+  },
+  {
+    "ref": "99e71ae4-c151-4403-91bc-32a17363b9b9",
+    "keyword": "adfbc5e7c0c2e502f55c7076bab40400",
+    "answer": "_event_media__7425bebd-59a5-442b-9856-86692a5dd6e1",
+    "options": {},
+    "from": "18294719174",
+    "refSerialize": "405c9b2bdaf9043545cfd8a87bda83fb"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18294719174"
+  },
+  {
+    "ref": "ab85d85f-8256-4b31-a42d-931bd3df8fc4",
+    "keyword": "dfbb1574edb7c57b8b1456e5792fec06",
+    "answer": "A1",
+    "options": {},
+    "from": "18099668188",
+    "refSerialize": "c58c7648e3f2e0499973ca3635b26645"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18099668188"
+  },
+  {
+    "ref": "ans_7ae4d3b7-80f8-40a5-adb8-6c9644083bf2",
+    "keyword": "key_3cd6eadd-0dc6-46dd-9eaf-19dce391e152",
+    "answer": "Por favor, selecciona el tipo de carga ingresando el número:\n1. OCEAN FCL",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "196204bf4ce6fd357f5c7935b7cd06a9",
+    "from": "18099668188"
+  },
+  {
+    "ref": "0d03fd19-c61d-4c98-99bd-233a83f467bf",
+    "keyword": null,
+    "answer": "Hola Nathanael de Jesus, gracias por contactarnos. Actualmente no tengo acceso para realizar consultas específicas con respecto a números de consulta o códigos de evento. Sin embargo, me encantaría ayudarte. Si tienes alguna pregunta sobre nuestros servicios o necesitas información adicional sobre OM BUSINESS LOGISTIC, por favor házmelo saber.\n\nSi deseas realizar una cotización o rastrear una carga, por favor selecciona una de las siguientes opciones escribiendo el código correspondiente:\n\nA1. REALIZAR COTIZACIÓN\n\nA2. RASTREAR CARGA \n\nNo dudes en contactarnos para más información o asistencia. ¡Estamos aquí para ayudarte!",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18294719174",
+    "refSerialize": "d0c54029a879bfc72068629c2971f78d"
+  },
+  {
+    "ref": "2d0bbbad-30e2-4905-9aae-bb9b11982c60",
+    "keyword": "196204bf4ce6fd357f5c7935b7cd06a9",
+    "answer": "1",
+    "options": {},
+    "from": "18099668188",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_26a1db58-7a64-44e5-add0-327dda0b215d",
+    "keyword": "key_9c569882-ce5a-4f10-a246-ba2f6ee106e0",
+    "answer": "Por favor, ingresa el código del puerto de origen (ej: USMIA):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "44901f879093143449ad3a89f41960cd",
+    "from": "18099668188"
+  },
+  {
+    "ref": "d63930be-aad7-4cc3-832a-8cd94022ccff",
+    "keyword": "9731f459bb99c5814417449663ba5177",
+    "answer": "a1",
+    "options": {},
+    "from": "18294719174",
+    "refSerialize": "27d01d6f4bd31caec0ee045f505e620c"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18294719174"
+  },
+  {
+    "ref": "3a32c5bf-57e5-4b11-8db1-a725663b3a3d",
+    "keyword": null,
+    "answer": "Este es el listado de precios disponibles:\n\n* **2024-12-18:** USD 504 (Quick Quotes) , USD 660 (Quick Quotes Spot)\n* **2024-12-25:** USD 504 (Quick Quotes) , USD 660 (Quick Quotes Spot)\n* **2025-01-01:** USD 504 (Quick Quotes) , USD 660 (Quick Quotes Spot)\n* **2025-01-08:** USD 504 (Quick Quotes) , USD 660 (Quick Quotes Spot)\n* **2025-01-15:** USD 504 (Quick Quotes) , USD 660 (Quick Quotes Spot)\n* **2025-01-23:** USD 504 (Quick Quotes) , USD 660 (Quick Quotes Spot)\n\n\nEn OM Business Logistic, nos dedicamos a ofrecer soluciones logísticas eficientes y confiables.  Nuestros precios competitivos y nuestro compromiso con la excelencia nos convierten en la mejor opción para sus necesidades de transporte. ¡Contáctenos hoy mismo para obtener una cotización personalizada!\n",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18294719174",
+    "refSerialize": "d247d74a8d3bfbff69a30e69317ed7b7"
+  },
+  {
+    "ref": "574e08bc-5666-4dc1-9f75-40ac396a10de",
+    "keyword": null,
+    "answer": "¡Hola, Nathanael de Jesus!\n\nGracias por ponerte en contacto con OM BUSINESS LOGISTIC. Nos complace saber que estás interesado en realizar una cotización con nosotros. Por favor, contáctanos directamente a través de nuestro correo electrónico apayano@ombusinesslogistic.com o mediante WhatsApp al +809-902-1521 para que podamos asistirte en el proceso de cotización.\n\nEsperamos poder servirte y brindarte la mejor solución logística para tus necesidades. ¡Esperamos tu contacto!\n\nPara más opciones, aquí está el menú:\n\nA1. REALIZAR COTIZACIÓN\n\nA2. RASTREAR CARGA\n\nPor favor, escribe la opción que deseas, por ejemplo: A1 para cotizar con nosotros.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18294719174",
+    "refSerialize": "c6a20622a4d72b071765af4e744c39dd"
+  },
+  {
+    "ref": "692335ee-d0e8-47d7-8c7e-0d6772bb8460",
+    "keyword": "44901f879093143449ad3a89f41960cd",
+    "answer": "Qingdao",
+    "options": {},
+    "from": "18099668188",
+    "refSerialize": "1a3afb8086c2f4a652ffe2ec2c25d4e4"
+  },
+  {
+    "ref": "ans_3d3966c1-5db4-4976-861a-9e0185f146d6",
+    "keyword": "key_4812da22-761f-4c57-b2fc-cfbbc190c647",
+    "answer": "Por favor, ingresa el código del puerto de destino (ej: DOHAI):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "722d6fdbcd28897f25ca0899fb303c62",
+    "from": "18099668188"
+  },
+  {
+    "ref": "bec0fa43-64d3-4cb4-bf2f-55eb1668e09c",
+    "keyword": "722d6fdbcd28897f25ca0899fb303c62",
+    "answer": "Caucedo",
+    "options": {},
+    "from": "18099668188",
+    "refSerialize": "6566709b60cc2748651b6b8b50e3d1d5"
+  },
+  {
+    "ref": "ans_b5bc2bb9-f6db-496b-876d-aeabd4efcba6",
+    "keyword": "key_ed311335-ff64-47de-99a7-d8229b45f39e",
+    "answer": "Por favor, ingresa los detalles de la carga:\n\nIngresa la cantidad de contenedores y el tipo (20 ft, 40 ft, 40 HC), siguiendo el siguiente formato: 20 ft,1 (la cantidad de contenedores luego de la coma):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "736dd444e4fec45ca150f4bfd7a71595",
+    "from": "18099668188"
+  },
+  {
+    "ref": "382c5690-75c6-49f0-a5c4-82122c0202f3",
+    "keyword": "9731f459bb99c5814417449663ba5177",
+    "answer": "a2",
+    "options": {},
+    "from": "18294719174",
+    "refSerialize": "a66b52821d91b07b2deb091353ffbf2b"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18294719174"
+  },
+  {
+    "ref": "3af2ae49-8945-40f1-90b1-d7ddb4d4745a",
+    "keyword": null,
+    "answer": "¡Hola, Nathanael de Jesus!\n\nActualmente, nuestro servicio de seguimiento de carga aún no está disponible a través de este canal. Sin embargo, te invitamos a que nos contactes directamente para poder asistir en el seguimiento de tu carga de manera más personalizada.\n\nPuedes comunicarte con nuestro Gerente de Operaciones y Supervisor de Importación y Exportación, el Sr. Obispo Montero, a través del siguiente correo electrónico: apayano@ombusinesslogistic.com. También puedes llamarnos al +829-247-0977 o enviarnos un mensaje por WhatsApp al +809-902-1521.\n\n¡Esperamos poder ayudarte pronto con tus necesidades logísticas!\n\nSi te gustaría realizar otra consulta, aquí tienes el menú de opciones:\n\nA1. REALIZAR COTIZACIÓN\n\nA2. RASTREAR CARGA\n\nPor favor, escribe la opción que desees, por ejemplo, escribe A1 para cotizar con nosotros.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18294719174",
+    "refSerialize": "7c20513e1c27fbd247e3aad66e91453e"
+  },
+  {
+    "ref": "0a9726d9-f3ec-4870-8167-adfd0d8b0340",
+    "keyword": "736dd444e4fec45ca150f4bfd7a71595",
+    "answer": "40 HC",
+    "options": {},
+    "from": "18099668188",
+    "refSerialize": "635b140854d6c1f4b6f7cc429e072342"
+  },
+  {
+    "ref": "e5f3d097-cf3b-414b-a01d-7140df6ba71f",
+    "keyword": null,
+    "answer": "⚠️ Formato incorrecto. Por favor, ingresa la información correctamente siguiendo el formato: 20 ft,1 o 40 ft,1.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18099668188",
+    "refSerialize": "567127f9c963538f68585d2060bd88d1"
+  },
+  {
+    "ref": "ans_b5bc2bb9-f6db-496b-876d-aeabd4efcba6",
+    "keyword": "key_ed311335-ff64-47de-99a7-d8229b45f39e",
+    "answer": "Por favor, ingresa los detalles de la carga:\n\nIngresa la cantidad de contenedores y el tipo (20 ft, 40 ft, 40 HC), siguiendo el siguiente formato: 20 ft,1 (la cantidad de contenedores luego de la coma):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "736dd444e4fec45ca150f4bfd7a71595",
+    "from": "18099668188"
+  },
+  {
+    "ref": "5fe21267-4469-4a72-a39f-3fae17307bef",
+    "keyword": "736dd444e4fec45ca150f4bfd7a71595",
+    "answer": "40 HC",
+    "options": {},
+    "from": "18099668188",
+    "refSerialize": "635b140854d6c1f4b6f7cc429e072342"
+  },
+  {
+    "ref": "17f08d31-7cd9-4421-88ae-030e10e277dd",
+    "keyword": null,
+    "answer": "⚠️ Formato incorrecto. Por favor, ingresa la información correctamente siguiendo el formato: 20 ft,1 o 40 ft,1.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18099668188",
+    "refSerialize": "567127f9c963538f68585d2060bd88d1"
+  },
+  {
+    "ref": "ans_b5bc2bb9-f6db-496b-876d-aeabd4efcba6",
+    "keyword": "key_ed311335-ff64-47de-99a7-d8229b45f39e",
+    "answer": "Por favor, ingresa los detalles de la carga:\n\nIngresa la cantidad de contenedores y el tipo (20 ft, 40 ft, 40 HC), siguiendo el siguiente formato: 20 ft,1 (la cantidad de contenedores luego de la coma):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "736dd444e4fec45ca150f4bfd7a71595",
+    "from": "18099668188"
+  },
+  {
+    "ref": "386facf8-c904-4755-84d3-a9a9f5f04176",
+    "keyword": "736dd444e4fec45ca150f4bfd7a71595",
+    "answer": "40 FT",
+    "options": {},
+    "from": "18099668188",
+    "refSerialize": "c37b72a69482692c6f5dd8c5e2ce58cc"
+  },
+  {
+    "ref": "7b1dcb64-0621-41e8-9687-c2c065bf2878",
+    "keyword": null,
+    "answer": "⚠️ Formato incorrecto. Por favor, ingresa la información correctamente siguiendo el formato: 20 ft,1 o 40 ft,1.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18099668188",
+    "refSerialize": "567127f9c963538f68585d2060bd88d1"
+  },
+  {
+    "ref": "ans_b5bc2bb9-f6db-496b-876d-aeabd4efcba6",
+    "keyword": "key_ed311335-ff64-47de-99a7-d8229b45f39e",
+    "answer": "Por favor, ingresa los detalles de la carga:\n\nIngresa la cantidad de contenedores y el tipo (20 ft, 40 ft, 40 HC), siguiendo el siguiente formato: 20 ft,1 (la cantidad de contenedores luego de la coma):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "736dd444e4fec45ca150f4bfd7a71595",
+    "from": "18099668188"
+  },
+  {
+    "ref": "f7c7131c-eda2-408a-b28d-819a079077ce",
+    "keyword": "736dd444e4fec45ca150f4bfd7a71595",
+    "answer": "40HC",
+    "options": {},
+    "from": "18099668188",
+    "refSerialize": "e081e12c446f23eede7112ddfb4c5555"
+  },
+  {
+    "ref": "d1f7dd88-730a-4f9a-a21b-b0adb3d4a6e7",
+    "keyword": null,
+    "answer": "⚠️ Formato incorrecto. Por favor, ingresa la información correctamente siguiendo el formato: 20 ft,1 o 40 ft,1.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18099668188",
+    "refSerialize": "567127f9c963538f68585d2060bd88d1"
+  },
+  {
+    "ref": "ans_b5bc2bb9-f6db-496b-876d-aeabd4efcba6",
+    "keyword": "key_ed311335-ff64-47de-99a7-d8229b45f39e",
+    "answer": "Por favor, ingresa los detalles de la carga:\n\nIngresa la cantidad de contenedores y el tipo (20 ft, 40 ft, 40 HC), siguiendo el siguiente formato: 20 ft,1 (la cantidad de contenedores luego de la coma):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "736dd444e4fec45ca150f4bfd7a71595",
+    "from": "18099668188"
+  },
+  {
+    "ref": "6a574a1d-c430-4906-9efd-7cb4640091b4",
+    "keyword": "9731f459bb99c5814417449663ba5177",
     "answer": "A2",
     "options": {},
     "from": "18296105615",
     "refSerialize": "1190610edb7effdad40d6d716a3f2b16"
   },
   {
-    "ref": "ans_2bbd9ba7-88fc-40a1-b7d9-62b9e4a89d52",
-    "keyword": "key_b250de6a-5068-4d60-8fa7-b5629e4f6a15",
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
     "answer": "__call_action__",
     "options": {
       "buttons": [],
@@ -55,12 +1070,12 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "002b5e51e18704a3e204200dffba4911",
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
     "from": "18296105615"
   },
   {
-    "ref": "ans_38042a08-195a-4c68-9df3-1c45c6f63b6d",
-    "keyword": "key_0739cce9-32d6-44ec-a0c6-220b3ed2d2f7",
+    "ref": "ans_6b184100-d915-4b41-9c88-cc0dd18019d4",
+    "keyword": "key_7c202370-4846-465b-8646-67c47009685f",
     "answer": "Por favor, ingresa tu número de rastreo:",
     "options": {
       "buttons": [],
@@ -70,213 +1085,32 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "ef44e27360a293e13a8b742812b89041",
+    "refSerialize": "1cceb45d30112c276d846b07b0e107a6",
     "from": "18296105615"
   },
   {
-    "ref": "2017c19c-483e-4d4f-b808-a51592fbf537",
-    "keyword": "ef44e27360a293e13a8b742812b89041",
-    "answer": "CHN1621394",
+    "ref": "93d54d0d-6b28-4691-99a1-15815cd57215",
+    "keyword": "1cceb45d30112c276d846b07b0e107a6",
+    "answer": "CMAU6136679",
     "options": {},
     "from": "18296105615",
-    "refSerialize": "e79e1d0fa0bf09f27e710099abbeb37e"
+    "refSerialize": "3c075551c2406fc36a91aaab539d4151"
   },
   {
-    "ref": "95867b90-a674-47ca-8e7a-e27bd6ff3cad",
-    "keyword": null,
-    "answer": "Hubo un error al intentar rastrear tu paquete. Por favor, intenta más tarde.",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "18296105615",
-    "refSerialize": "c29626798744d3f672e7532ea5866144"
-  },
-  {
-    "ref": "ans_2bbd9ba7-88fc-40a1-b7d9-62b9e4a89d52",
-    "keyword": "key_b250de6a-5068-4d60-8fa7-b5629e4f6a15",
-    "answer": "__call_action__",
-    "options": {
-      "buttons": [],
-      "capture": false,
-      "delay": 0,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "002b5e51e18704a3e204200dffba4911",
-    "from": "18296105615"
-  },
-  {
-    "ref": "ea2feb6e-df4d-4104-b9e4-7067e38c7bba",
-    "keyword": null,
-    "answer": "Actualmente, no tengo la capacidad de realizar seguimientos de carga. Para asistencia sobre la consulta CHN1621394, por favor contacte al Sr. Obispo Montero al correo electrónico: apayano@ombusinesslogistic.com o vía WhatsApp: +809-902-1521.\n\nMientras tanto, le presento nuestro menú de opciones:\n\nA1. REALIZAR COTIZACIÓN\n\nA2. RASTREAR CARGA\n\nPor favor, escriba la opción que desea, por ejemplo: escriba A1 para cotizar con nosotros. Estamos aquí para ayudarle con sus necesidades logísticas.",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "18296105615",
-    "refSerialize": "20b6c48d271e9ca01255419312292b06"
-  },
-  {
-    "ref": "ans_2bbd9ba7-88fc-40a1-b7d9-62b9e4a89d52",
-    "keyword": "key_b250de6a-5068-4d60-8fa7-b5629e4f6a15",
-    "answer": "__call_action__",
-    "options": {
-      "buttons": [],
-      "capture": false,
-      "delay": 0,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "002b5e51e18704a3e204200dffba4911",
-    "from": "17815101547"
-  },
-  {
-    "ref": "ans_38042a08-195a-4c68-9df3-1c45c6f63b6d",
-    "keyword": "key_0739cce9-32d6-44ec-a0c6-220b3ed2d2f7",
-    "answer": "Por favor, ingresa tu número de rastreo:",
-    "options": {
-      "buttons": [],
-      "capture": true,
-      "delay": 0,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "ef44e27360a293e13a8b742812b89041",
-    "from": "17815101547"
-  },
-  {
-    "ref": "7bbb1704-e746-4c15-a098-dde5be9b0503",
-    "keyword": "ef44e27360a293e13a8b742812b89041",
-    "answer": "CHN1621394",
-    "options": {},
-    "from": "17815101547",
-    "refSerialize": "e79e1d0fa0bf09f27e710099abbeb37e"
-  },
-  {
-    "ref": "52713317-0020-4274-910d-444f9990f98e",
-    "keyword": null,
-    "answer": "Hubo un error al intentar rastrear tu paquete. Por favor, intenta más tarde.",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "17815101547",
-    "refSerialize": "c29626798744d3f672e7532ea5866144"
-  },
-  {
-    "ref": "ans_2bbd9ba7-88fc-40a1-b7d9-62b9e4a89d52",
-    "keyword": "key_b250de6a-5068-4d60-8fa7-b5629e4f6a15",
-    "answer": "__call_action__",
-    "options": {
-      "buttons": [],
-      "capture": false,
-      "delay": 0,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "002b5e51e18704a3e204200dffba4911",
-    "from": "17815101547"
-  },
-  {
-    "ref": "5e42608c-5824-47e5-82d0-1cc9543ef203",
-    "keyword": null,
-    "answer": "Actualmente, no puedo acceder a información específica de consultas como CHN1621394. Sin embargo, te invito a que nos contactes directamente para obtener asistencia personalizada y rápida. Puedes comunicarte con nosotros vía WhatsApp al +809-902-1521 o por teléfono al +829-247-0977. Nuestro equipo estará encantado de ayudarte.\n\nA continuación, te presento nuestro menú de opciones para que elijas el tipo de servicio que deseas:\n\nA1. REALIZAR COTIZACIÓN\n\nA2. RASTREAR CARGA\n\nEscribe la opción que desees, por ejemplo, escribe A1 para cotizar con nosotros.",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "17815101547",
-    "refSerialize": "041851e1e63547dff4a2fad8427ee6b2"
-  },
-  {
-    "ref": "c11efee8-3959-487b-b216-345c2b0dcebc",
-    "keyword": "002b5e51e18704a3e204200dffba4911",
-    "answer": "A2",
-    "options": {},
-    "from": "17815101547",
-    "refSerialize": "1190610edb7effdad40d6d716a3f2b16"
-  },
-  {
-    "ref": "ans_2bbd9ba7-88fc-40a1-b7d9-62b9e4a89d52",
-    "keyword": "key_b250de6a-5068-4d60-8fa7-b5629e4f6a15",
-    "answer": "__call_action__",
-    "options": {
-      "buttons": [],
-      "capture": false,
-      "delay": 0,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "002b5e51e18704a3e204200dffba4911",
-    "from": "17815101547"
-  },
-  {
-    "ref": "ans_38042a08-195a-4c68-9df3-1c45c6f63b6d",
-    "keyword": "key_0739cce9-32d6-44ec-a0c6-220b3ed2d2f7",
-    "answer": "Por favor, ingresa tu número de rastreo:",
-    "options": {
-      "buttons": [],
-      "capture": true,
-      "delay": 0,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "ef44e27360a293e13a8b742812b89041",
-    "from": "17815101547"
-  },
-  {
-    "ref": "702d92bd-1b2c-4ea3-b56f-bb052f6e77e4",
-    "keyword": "ef44e27360a293e13a8b742812b89041",
-    "answer": "CHN1621394",
-    "options": {},
-    "from": "17815101547",
-    "refSerialize": "e79e1d0fa0bf09f27e710099abbeb37e"
-  },
-  {
-    "ref": "ans_b28dc6d3-3e6b-4c90-a81a-61115880c3ad",
-    "keyword": "key_3aafd6b9-5ea2-43c2-8680-ecb71c5d2fc4",
-    "answer": "__call_action__",
-    "options": {
-      "buttons": [],
-      "capture": false,
-      "delay": 0,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "354051881c287e95ef0adafd4022fd54",
-    "from": "120363169975121665@newsletter"
-  },
-  {
-    "ref": "9ad60d09-1a6c-42ff-90e6-87ffd2748337",
+    "ref": "dec72a09-7d6c-4d7a-9333-1e3a43b11c6f",
     "keyword": null,
     "answer": "Este es el estado de su carga",
     "options": {
-      "media": "https://storage.googleapis.com/triptap-dev.appspot.com/569a45c9-5e54-4a6a-995f-88ada7923bb1.png",
+      "media": "https://storage.googleapis.com/triptap-dev.appspot.com/889c9249-577f-403d-9750-c7f3e1f46a6b.png",
       "buttons": [],
       "capture": false,
       "delay": 0
     },
-    "from": "17815101547",
+    "from": "18296105615",
     "refSerialize": "1c9ba19b168aabf7a63676db39e022e4"
   },
   {
-    "ref": "c59533b0-7a00-40bf-81d6-3f85ef97cd68",
+    "ref": "91653243-35f4-4b8c-8eaf-f0caad54861c",
     "keyword": null,
     "answer": "GRACIAS POR PREFERIRNOS",
     "options": {
@@ -285,12 +1119,12 @@
       "capture": false,
       "delay": 0
     },
-    "from": "17815101547",
+    "from": "18296105615",
     "refSerialize": "a6d021369fb2ff1fdb488682a661b455"
   },
   {
-    "ref": "0f266a49-e170-401c-8231-256ee440be72",
-    "keyword": "ans_38042a08-195a-4c68-9df3-1c45c6f63b6d",
+    "ref": "86bc1c08-3700-428f-8776-00b60dead139",
+    "keyword": "ans_6b184100-d915-4b41-9c88-cc0dd18019d4",
     "answer": "__end_flow__",
     "options": {
       "media": null,
@@ -298,7 +1132,500 @@
       "capture": false,
       "delay": 0
     },
-    "from": "17815101547",
+    "from": "18296105615",
     "refSerialize": "a07e48655d1eb1adf63c1b74c6ee668e"
+  },
+  {
+    "ref": "83f2c7e7-e8b2-403b-955f-8bee7a2cd148",
+    "keyword": "a07e48655d1eb1adf63c1b74c6ee668e",
+    "answer": "Muchas gracias",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "2d9310be9082475030a4b3fd6bdbeb40"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18296105615"
+  },
+  {
+    "ref": "2db40ec1-dc79-4f57-ba10-53f202830cb8",
+    "keyword": null,
+    "answer": "¡Hola, Obispo Montero B.! Gracias a ti por tu mensaje. Si necesitas más información sobre nuestros servicios logísticos o deseas realizar una cotización o rastrear una carga, no dudes en contactarnos. Aquí te dejo el menú de opciones:\n\nA1. REALIZAR COTIZACIÓN\n\nA2. RASTREAR CARGA\n\nPor favor, escribe la opción que deseas, ejemplo: escribe A1 para cotizar con nosotros. ",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18296105615",
+    "refSerialize": "b5808df7588b77afd9703bec670ed00e"
+  },
+  {
+    "ref": "a24823da-aa25-40a7-99c4-23dc8f113429",
+    "keyword": "9731f459bb99c5814417449663ba5177",
+    "answer": "A1",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "c58c7648e3f2e0499973ca3635b26645"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18296105615"
+  },
+  {
+    "ref": "ans_7ae4d3b7-80f8-40a5-adb8-6c9644083bf2",
+    "keyword": "key_3cd6eadd-0dc6-46dd-9eaf-19dce391e152",
+    "answer": "Por favor, selecciona el tipo de carga ingresando el número:\n1. OCEAN FCL",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "196204bf4ce6fd357f5c7935b7cd06a9",
+    "from": "18296105615"
+  },
+  {
+    "ref": "ca755b1d-1531-4da2-9737-f729451b53eb",
+    "keyword": "196204bf4ce6fd357f5c7935b7cd06a9",
+    "answer": "1",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_26a1db58-7a64-44e5-add0-327dda0b215d",
+    "keyword": "key_9c569882-ce5a-4f10-a246-ba2f6ee106e0",
+    "answer": "Por favor, ingresa el código del puerto de origen (ej: USMIA):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "44901f879093143449ad3a89f41960cd",
+    "from": "18296105615"
+  },
+  {
+    "ref": "f72607f3-7638-41b3-b0b7-137efb5af63c",
+    "keyword": "44901f879093143449ad3a89f41960cd",
+    "answer": "VALENCIA",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "4d2039c494b8e3d01e63c8402102a6e5"
+  },
+  {
+    "ref": "ans_3d3966c1-5db4-4976-861a-9e0185f146d6",
+    "keyword": "key_4812da22-761f-4c57-b2fc-cfbbc190c647",
+    "answer": "Por favor, ingresa el código del puerto de destino (ej: DOHAI):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "722d6fdbcd28897f25ca0899fb303c62",
+    "from": "18296105615"
+  },
+  {
+    "ref": "e36307a7-eaa2-4417-b915-62cdc1f0381f",
+    "keyword": "722d6fdbcd28897f25ca0899fb303c62",
+    "answer": "CAUCEDO",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "2bdf1fc36e4be59fca4259ba0fa49091"
+  },
+  {
+    "ref": "ans_b5bc2bb9-f6db-496b-876d-aeabd4efcba6",
+    "keyword": "key_ed311335-ff64-47de-99a7-d8229b45f39e",
+    "answer": "Por favor, ingresa los detalles de la carga:\n\nIngresa la cantidad de contenedores y el tipo (20 ft, 40 ft, 40 HC), siguiendo el siguiente formato: 20 ft,1 (la cantidad de contenedores luego de la coma):",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "736dd444e4fec45ca150f4bfd7a71595",
+    "from": "18296105615"
+  },
+  {
+    "ref": "3034b44e-d174-4435-a031-6e3ef50c23ea",
+    "keyword": "736dd444e4fec45ca150f4bfd7a71595",
+    "answer": "20 ft,1",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "48523835ce388c700787944ce0216f56"
+  },
+  {
+    "ref": "ans_a8769553-9ba0-4c00-bc05-df36c27c0628",
+    "keyword": "key_45c0ef03-be0f-41d1-b001-9c328d451337",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "adfbc5e7c0c2e502f55c7076bab40400",
+    "from": "18296105615"
+  },
+  {
+    "ref": "91236bcd-2972-42a0-958f-139b9b4a0c7c",
+    "keyword": null,
+    "answer": "Este es el listado de precios disponibles:\n\n* **2024-12-18:** EUR 1286.40\n* **2024-12-27:** EUR 1286.40\n* **2025-01-06:** EUR 1286.40\n* **2024-12-27:** EUR 1671.60\n\n\nEn OM Business Logistic te ofrecemos las mejores opciones de logística para tus necesidades.  Nuestros precios competitivos y nuestro compromiso con la eficiencia te garantizan una experiencia sin problemas. ¡Contáctanos hoy mismo para obtener un presupuesto personalizado!\n",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18296105615",
+    "refSerialize": "4d1941089aa0373353728affcfb0a90f"
+  },
+  {
+    "ref": "3133f201-2a15-444b-9931-66d0a019509c",
+    "keyword": "9731f459bb99c5814417449663ba5177",
+    "answer": "a2",
+    "options": {},
+    "from": "18294719174",
+    "refSerialize": "a66b52821d91b07b2deb091353ffbf2b"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18294719174"
+  },
+  {
+    "ref": "c4649cd2-2193-42ae-a51b-0f1853a566c3",
+    "keyword": null,
+    "answer": "¡Hola, Nathanael de Jesus!\n\nActualmente, aún no tenemos integrado el servicio de seguimiento de carga a través de este medio. Sin embargo, te invitamos a contactarnos directamente para obtener asistencia personalizada sobre el seguimiento de tu envío. Puedes comunicarte con nuestro Overseas Manager, el Sr. Obispo Montero, a través del correo electrónico apayano@ombusinesslogistic.com o por WhatsApp al +809-902-1521.\n\nEstamos comprometidos a brindar un excelente servicio y esperamos poder asistirte con todas tus necesidades logísticas. \n\nAdemás, aquí tienes un menú de opciones para futuros servicios:\n\nA1. REALIZAR COTIZACIÓN\n\nA2. RASTREAR CARGA\n\nPor favor, escribe la opción que deseas, por ejemplo: escribe A1 para cotizar con nosotros.\n\n¡Gracias por elegir OM BUSINESS LOGISTIC!",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18294719174",
+    "refSerialize": "c8ab79e794526521e2f1fa77818a8753"
+  },
+  {
+    "ref": "d6e6a0d3-9d42-4d07-bde0-b6364f62e819",
+    "keyword": "9731f459bb99c5814417449663ba5177",
+    "answer": "A2",
+    "options": {},
+    "from": "18294719174",
+    "refSerialize": "1190610edb7effdad40d6d716a3f2b16"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18294719174"
+  },
+  {
+    "ref": "ans_6b184100-d915-4b41-9c88-cc0dd18019d4",
+    "keyword": "key_7c202370-4846-465b-8646-67c47009685f",
+    "answer": "Por favor, ingresa tu número de rastreo:",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "1cceb45d30112c276d846b07b0e107a6",
+    "from": "18294719174"
+  },
+  {
+    "ref": "83bbac5d-b6d1-4a08-b3fa-ac8dbee1985b",
+    "keyword": "1cceb45d30112c276d846b07b0e107a6",
+    "answer": "TCLU3650950",
+    "options": {},
+    "from": "18294719174",
+    "refSerialize": "5a0adbd0f4c8f59302fe203065160b41"
+  },
+  {
+    "ref": "c096657d-f49e-45dd-bdd6-f6a1e886515f",
+    "keyword": null,
+    "answer": "Este es el estado de su carga",
+    "options": {
+      "media": "https://storage.googleapis.com/triptap-dev.appspot.com/aa847cd1-6532-410b-880d-3da66edf840a.png",
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18294719174",
+    "refSerialize": "1c9ba19b168aabf7a63676db39e022e4"
+  },
+  {
+    "ref": "800b2343-8375-4a23-8d38-6e10604a06a8",
+    "keyword": null,
+    "answer": "GRACIAS POR PREFERIRNOS",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18294719174",
+    "refSerialize": "a6d021369fb2ff1fdb488682a661b455"
+  },
+  {
+    "ref": "4f674f69-821e-42f9-801b-d995faaa6bbb",
+    "keyword": "ans_6b184100-d915-4b41-9c88-cc0dd18019d4",
+    "answer": "__end_flow__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18294719174",
+    "refSerialize": "a07e48655d1eb1adf63c1b74c6ee668e"
+  },
+  {
+    "ref": "f986c8c1-b4ab-4e20-b5ef-c06681cb10d8",
+    "keyword": "adfbc5e7c0c2e502f55c7076bab40400",
+    "answer": "A2",
+    "options": {},
+    "from": "18098128353",
+    "refSerialize": "1190610edb7effdad40d6d716a3f2b16"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18098128353"
+  },
+  {
+    "ref": "ans_6b184100-d915-4b41-9c88-cc0dd18019d4",
+    "keyword": "key_7c202370-4846-465b-8646-67c47009685f",
+    "answer": "Por favor, ingresa tu número de rastreo:",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "1cceb45d30112c276d846b07b0e107a6",
+    "from": "18098128353"
+  },
+  {
+    "ref": "bd5e963e-8748-4743-90da-31065226dfaf",
+    "keyword": "1cceb45d30112c276d846b07b0e107a6",
+    "answer": "TCLU3650950",
+    "options": {},
+    "from": "18098128353",
+    "refSerialize": "5a0adbd0f4c8f59302fe203065160b41"
+  },
+  {
+    "ref": "f8a7aa36-d7ea-4396-b27e-9d4eb195c292",
+    "keyword": null,
+    "answer": "Este es el estado de su carga",
+    "options": {
+      "media": "https://storage.googleapis.com/triptap-dev.appspot.com/a743388f-813f-4681-b733-dacbd583a3a5.png",
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18098128353",
+    "refSerialize": "1c9ba19b168aabf7a63676db39e022e4"
+  },
+  {
+    "ref": "f0600351-3969-4d88-9228-d903a81f15ae",
+    "keyword": null,
+    "answer": "GRACIAS POR PREFERIRNOS",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18098128353",
+    "refSerialize": "a6d021369fb2ff1fdb488682a661b455"
+  },
+  {
+    "ref": "43d69977-a477-4ba9-8b1e-0c1cd141a961",
+    "keyword": "ans_6b184100-d915-4b41-9c88-cc0dd18019d4",
+    "answer": "__end_flow__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18098128353",
+    "refSerialize": "a07e48655d1eb1adf63c1b74c6ee668e"
+  },
+  {
+    "ref": "afd7a3f3-2364-4eaf-ace8-9d86f037e2d1",
+    "keyword": "a07e48655d1eb1adf63c1b74c6ee668e",
+    "answer": "A2",
+    "options": {},
+    "from": "18098128353",
+    "refSerialize": "1190610edb7effdad40d6d716a3f2b16"
+  },
+  {
+    "ref": "ans_bb6f1980-c7a0-4d09-b6bf-024f073cc4c8",
+    "keyword": "key_fa183ee9-e77c-4f84-9bde-4b858dbca073",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9731f459bb99c5814417449663ba5177",
+    "from": "18098128353"
+  },
+  {
+    "ref": "ans_6b184100-d915-4b41-9c88-cc0dd18019d4",
+    "keyword": "key_7c202370-4846-465b-8646-67c47009685f",
+    "answer": "Por favor, ingresa tu número de rastreo:",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "1cceb45d30112c276d846b07b0e107a6",
+    "from": "18098128353"
+  },
+  {
+    "ref": "306ee373-b3fd-423d-83fb-25bd7bb2d46e",
+    "keyword": "1cceb45d30112c276d846b07b0e107a6",
+    "answer": "TCLU3650950",
+    "options": {},
+    "from": "18098128353",
+    "refSerialize": "5a0adbd0f4c8f59302fe203065160b41"
+  },
+  {
+    "ref": "155cf76c-5029-40da-ae20-4b58d48c454d",
+    "keyword": null,
+    "answer": "Este es el estado de su carga",
+    "options": {
+      "media": "https://storage.googleapis.com/triptap-dev.appspot.com/e7fbe8fb-d3eb-44c4-8a41-16c9cc329bc8.png",
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18098128353",
+    "refSerialize": "1c9ba19b168aabf7a63676db39e022e4"
+  },
+  {
+    "ref": "84ffc9f5-3853-4b41-83a1-00b2762c24a4",
+    "keyword": null,
+    "answer": "GRACIAS POR PREFERIRNOS",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18098128353",
+    "refSerialize": "a6d021369fb2ff1fdb488682a661b455"
+  },
+  {
+    "ref": "2c6abdf3-4cef-41fd-b432-e488f4cc4480",
+    "keyword": "ans_6b184100-d915-4b41-9c88-cc0dd18019d4",
+    "answer": "__end_flow__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "18098128353",
+    "refSerialize": "a07e48655d1eb1adf63c1b74c6ee668e"
+  },
+  {
+    "ref": "ad37bb5d-01e8-4de6-a14f-38c57b3e6e88",
+    "keyword": "adfbc5e7c0c2e502f55c7076bab40400",
+    "answer": "Buenas tardes",
+    "options": {},
+    "from": "18296105615",
+    "refSerialize": "1c3d20a0870d0b8077027073fda0ed90"
+  },
+  {
+    "ref": "ans_561828a2-21cc-449c-b102-8d3ffc20fbce",
+    "keyword": "key_bcd892da-fcdd-4a7e-941d-103c8c0f40a8",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "dfbb1574edb7c57b8b1456e5792fec06",
+    "from": "18296105615"
   }
 ]
