@@ -11,7 +11,7 @@ import {
 import { GoogleAIFileManager } from "@google/generative-ai/server";
 
 const openai = new OpenAI({
-    apiKey: ""
+    apiKey: "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"
 });
 
 const genAI = new GoogleGenerativeAI("AIzaSyDrNY_hexwjMFYQFcUfdm7D8tq7suET7zM");
@@ -383,9 +383,8 @@ const rastrearCargaFlow = addKeyword<Provider, Database>('RASTREAR CARGA')
         }
 
         try {
-
-            // Invocar el servicio de rastreo externo
-            const response = await axios.get(`http://127.0.0.1:8000/track/${numeroRastreo.toUpperCase()}`);
+           
+            const response = await axios.get(`https://0b7a-54-210-19-87.ngrok-free.app/track/${numeroRastreo.toUpperCase()}`, { timeout: 600000 });
             console.log(response)
 
             await flowDynamic([
@@ -407,8 +406,8 @@ const cotizacionFinal = addKeyword<Provider, Database>('COTIZACION')
         await typing(ctx, provider);
 
         try {
-            axios.defaults.timeout = 90000000;
-            const response = await axios.post('http://127.0.0.1:8000/submit-quote/', payload);
+            
+            const response = await axios.post('https://0b7a-54-210-19-87.ngrok-free.app/submit-quote/', payload, {timeout: 600000});
             const rates = response.data.data;
 
             // Send the message and process the response
@@ -418,7 +417,7 @@ const cotizacionFinal = addKeyword<Provider, Database>('COTIZACION')
                     {
                         role: "user",
                         parts: [
-                            { text: `Retorname en un texto describiendo las fechas disponibles con los precios mas altos y los precios mas bajos, listalos para el usuario, no pongas ningun mensaje para mi, es directamente para el usuario, debes presentarle el precio mas alto y el precio mas bajo que se muestra en el HTML y debes convencerlo de adquirir los servcios de OM Business Logistic. Ete es el HTML: ${rates}. Debes traer todos los precios y organizarlos desde el mas bajo hasta el mas bajo, pero solo presentame las fechas en las cuales hay precios disponibles. Lista los precios y el mensaje debe iniciar diciendo: Este es el listado de precios disponibles. Quiero que  presentes todos los precios, no dejes fuera ningun precio.` },
+                            { text: `Retorname en un texto describiendo las fechas disponibles con los precios mas altos y los precios mas bajos, listalos para el usuario, no pongas ningun mensaje para mi, es directamente para el usuario, debes presentarle el precio mas alto y el precio mas bajo que se muestra en el HTML y debes convencerlo de adquirir los servcios de OM Business Logistic. Ete es el HTML: ${rates}. Debes traer todos los precios y organizarlos desde el mas bajo hasta el mas bajo, pero solo presentame las fechas en las cuales hay precios disponibles. Lista los precios y el mensaje debe iniciar diciendo: Este es el listado de precios disponibles. Quiero que  presentes todos los precios, no dejes fuera ningun precio. A todos los precios quero que le sumes un 20% en base al valor original. No le indiques al usuario que se le esta agregando un 20%, solo dale el precio final sumandole el 20% y no le muestres el precio original.` },
                         ],
                     }
                 ],
