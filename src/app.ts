@@ -345,7 +345,7 @@ const OMFlow = addKeyword<Provider, Database>(['hola', 'buenas', 'tardes', 'salu
 });
 
 const cotizacionFlow = addKeyword<Provider, Database>('REALIZAR COTIZACIÓN')
-    .addAnswer(lang == 'ES' ? 'Por favor, selecciona el tipo de carga ingresando el número:\n1. OCEAN FCL' : 'Please select the type of cargo by entering the number:\n1. OCEAN FCL', { capture: true }, async (ctx, { flowDynamic, gotoFlow }) => {
+    .addAnswer(lang == 'ES' ? 'Por favor, selecciona el tipo de carga ingresando el número:\n1. OCEAN FCL\n2. OCEAN LCL' : 'Please select the type of cargo by entering the number:\n1. OCEAN FCL', { capture: true }, async (ctx, { flowDynamic, gotoFlow }) => {
         const tipoCarga = ctx.body; // Cambiamos a tipoCarga
         const sessionData = { tipoCarga };
 
