@@ -1,9 +1,9 @@
-// import { join } from 'path'
 import { createBot, createProvider, createFlow, addKeyword } from '@builderbot/bot'
 import { JsonFileDB as Database } from '@builderbot/database-json'
 import { BaileysProvider as Provider } from '@builderbot/provider-baileys'
 import OpenAI from "openai";
 import axios from 'axios';
+import nodemailer from 'nodemailer';
 
 import {
     GoogleGenerativeAI,
@@ -286,15 +286,21 @@ Universal Venture.
 
 Menu de opciones, le presentaras al usuario el siguente menu:
 
-MENU EN ESPAÑOL
+MENU EN ESPAÑOL, MOSTRARAS SOLO LAS OPCIONES CUANDO EL USUARIO ESCRIBA EN ESPAÑOL, NO QUIERO QUE ESCRIBAS QUE ESTAS SON LAS OPCIONES NI NADA RELACIONADO A ESTA LINEA.
 --------------------
 A1. REALIZAR COTIZACIÓN
 A2. RASTREAR CARGA
+A3. SERVICIO DE ADUANAS
+A4. SOLICITUD DE LIBERACIÓN
+A5. CARGA AEREA
 
-MENU EN INGLES
+MENU EN INGLES, MOSTRARAS SOLO LAS OPCIONES CUANDO EL USUARIO ESCRIBA EN INGLES, NO QUIERO QUE ESCRIBAS QUE ESTAS SON LAS OPCIONES NI NADA RELACIONADO A ESTA LINEA.
 ----------------------
 A1. MAKE A QUOTE
 A2. TRACK CARGO
+A3. CUSTOMS SERVICE
+A4. RELEASE REQUEST
+A5. AIR CARGO
 
 
 DEBES INDICARLE QUE DEBE ESCRIBIR LA OPCIÓN QUE DESEA, EJEMPLO: ESCRIBA A1 PARA COTIZAR CON NOSOTROS.
@@ -488,13 +494,71 @@ const fallbackFlow = addKeyword<Provider, Database>('').addAction(async (ctx, { 
     if (ctx.body == 'A2') {
         return gotoFlow(rastrearCargaFlow);
     }
+    if(ctx.body == 'A3') {
+        return gotoFlow(solicitarAduanas);
+    }
+    if(ctx.body == 'A4') {
+        return gotoFlow(solicitudLiberacion);
+    }
+    if(ctx.body == 'A5') {
+        return gotoFlow(cotizacionCargaAerea);
+    }
 
     const respuesta = await getQA(ctx.body, ctx.name || "Cliente");
     await flowDynamic(respuesta);
 });
 
+const solicitarAduanas = addKeyword<Provider, Database>('SERVICIO DE ADUANAS')
+.addAction(async (ctx, { flowDynamic, provider }) => {
+    await typing(ctx, provider);
+
+    return flowDynamic("Para realizar solicitudes para gestión aduanal por favor contactarnos al siguiente correo electronico: sales@ombusinesslogistic.com");
+})
+
+const solicitudLiberacion = addKeyword<Provider, Database>('SOLICITUD LIBERACION')
+.addAnswer('Por favor, ingresa tu número de BL que desea liberar:', { capture: true }, async (ctx, { flowDynamic, endFlow, provider }) => {
+    const numeroRastreo = ctx.body;
+    await typing(ctx, provider);
+
+    if (!numeroRastreo) {
+        return flowDynamic('El número de BL no puede estar vacío. Por favor, intenta nuevamente.');
+    }
+
+    try {
+        // TODO:SEND TO EMAIL OM BUSINESS LOGISTIC
+        const transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+              user: 'ingdanielvadez@gmail.com',
+              pass: 'npaj estr ifug jolp',
+            },
+          });
+
+          const mailOptions = {
+            from: 'ingdanielvadez@gmail.com',
+            to: 'release@ombusinesslogistic.com',
+            subject: 'Solicitud de liberación BL:' + numeroRastreo,
+            text: 'Se ha realizado la solicitud de liberación del siguiente BL:' + numeroRastreo,
+          };
+
+            const info = await transporter.sendMail(mailOptions);
+            console.log('Correo enviado: ', info.response);
+            return endFlow('Solicitud realizada correctamente, le contactaremos en las proximas 24 horas.')
+    } catch (error) {
+        console.error('Error al enviar email:', error);
+        return flowDynamic('Hubo un error al intentar enviar su información. Por favor, intenta más tarde.');
+    }
+});
+
+const cotizacionCargaAerea = addKeyword<Provider, Database>('CARGA AEREA')
+.addAction(async (ctx, { flowDynamic, provider }) => {
+    await typing(ctx, provider);
+
+    return flowDynamic("Para solicitar cotizaciones para transporte aereo por favor contactarnos al siguiente correo electronico: sales@ombusinesslogistic.com");
+})
+
 const main = async () => {
-    const adapterFlow = createFlow([OMFlow, cotizacionFlow, puertoOrigenFlow, puertoDestinoFlow, detallesCargaFlow, fallbackFlow, cotizacionFinal, rastrearCargaFlow]);
+    const adapterFlow = createFlow([OMFlow, cotizacionFlow, puertoOrigenFlow, puertoDestinoFlow, detallesCargaFlow, fallbackFlow, cotizacionFinal, rastrearCargaFlow, cotizacionCargaAerea, solicitudLiberacion, solicitarAduanas]);
     const adapterProvider = createProvider(Provider);
     const adapterDB = new Database({ filename: 'db.json' });
 
